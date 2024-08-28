@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;0,800;1,500;1,600&display=swap');
+
+:root{
+    --main-color: rgb(177, 40, 165);
+    --text-color: #ffffff;
+    --bg-color-01: #1f242d;
+    --bg-color-02: #323946;
+    --color-00: #0000001a;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+}
+html{
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+}
+
+body{background-color: var(--bg-color-01);
+    color: var(--text-color);
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.1rem;
+    display: flex;
+    background-color: var(--bg-color-01);
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 100;
+
+    border: solid 1px var(--main-color);
+}
+
+.navbar{
+    font-size: 1.2rem;
+    color: var(--text-color);
+    padding: 0.5rem 1rem;
+    transition: 0.4s;
+
+}
+
+.navbar img{
+ 
+}
+
+.navbar a{
+    display: inline-flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    background: transparent;
+    border: solid 0.15rem var(--main-color);
+    border-radius: 50%;
+    font-size: 2.2rem;
+    margin: 0 1rem 0 0;
+    color: var(--main-color);
+}
+
+.navbar a:hover{
+    background-color: var(--main-color);
+    color: var(--bg-color-02);
+    box-shadow: 0 0 0.3rem var(--main-color);
+}
+
+.navbar:hover{
+    color: var(--main-color);
+}
+
+
+
+
+section{
+   min-height: 100vh;
+   padding: 6rem 6rem 2rem;
+ 
+}
+
+.home{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.homeFoto img{
+    width: 100%;
+    border-left: solid 0.6rem var(--main-color);
+    border-bottom: solid 0.6rem var(--main-color);
+    border-image: linear-gradient(var(--main-color));
+
+
+}
+.socialMedia{
+    width: 45%;
+}
+
+.socialMedia h1{
+     font-weight: 700;
+     line-height: 1.3;
+
+     font-size: 1.9rem;
+}
+
+.socialMedia h3{
+    font-weight: 700;
+    font-size: 1.7rem;
+}
+
+.socialMedia p{
+    margin-top: 1.2rem;
+    text-align: justify;
+
+}
+
+.socialMedia h2{
+    font-weight: 700;
+    line-height: 1.3;
+
+    font-size: 1.2rem;
+
+}
+
+.serviceContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.serviceContainer .servicesBox{
+
+    padding: 2rem 1rem 2.5rem;
+    border-radius: 1,2rrem;
+    text-align: center;
+    border: solid 0.20rem var(--bg-color-01);
+    background-color: var(--bg-color-02);
+    transition: 0.5s ease;
+
+
+}
+
+.serviceContainer .servicesBox:hover{
+    border-color: var(--main-color);
+    transform: scale(1.01);
+
+
+}
+
+.servicesBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 25rem;
+    margin-bottom: 1rem;
+
+}
+
+.servicesBox i{
+    font-size: 4.0rem;
+    color: var(--main-color);
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.servicesBox h3{
+    font-size: 1.5rem;
+}
+
+.btn{
+    display: inline-block;
+    padding: 0.7rem 1.8rem;
+    background-color: var(--main-color);
+    border-radius: 2rem;
+    color: var(--text-color);
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    transition: 0.3s ease;
+    margin-top: 1.2rem;
+}
+
+.btn:hover{
+    box-shadow: 0 0 0.3rem var(--main-color);
+    background-color: inherit;
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+.servicesBox p{
+    margin: 0.5rem;
+    letter-spacing: 0.1;
+    display: -webkit-flex;
+    -webkit-line-clamp:7;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+p{
+    padding: 0%;
+    color: white;
+    width: 300px;
+    height: 200px;
+}
+
+
+.service h2,
+.project h2,
+.contato h2,
+.portfolio h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+
+.serviceContainer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+}
+
+.portfolio{
+    background-color: var(--bg-color-02);
+
+}
+.portfolioContainer{
+
+display: grid;
+gap: 1.2rem;
+
+}
+
+.portfolioBox{
+    position: relative;
+    border-radius: 0.6rem;
+    box-shadow: 0 0 0.6rem var(--bg-color-01);
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+}
+.portfolioBox img{
+    width: 100%;
+    transition: 0.5s ease;
+
+}
+
+.portfolioBox img:hover{
+    transform: scale(1.1);
+}
+
+.portfolioBox .portfolioSombra{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(transparent, var(--main-color));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 4rem;
+    transform: translateY(50em);
+    transition: 0.5s ease;
+}
+
+.portfolioBox:hover .portfolioSombra{
+    transform: translateY(0);
+    transition: 0.5s ease;
+
+}
+
+.portfolioSombra h4{
+    font-size: 1.8rem;
+}
+
+.portfolioSombra p{
+    margin: 0.2rem 0 0.5rem;
+}
+
+.portfolioSombra a{
+    
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    background: var(--text-color);
+    border-radius: 50%;
+}
+
+.portfolioSombra a i{
+    font-size: 1.2rem;
+    color: var(--bg-color-02);
+}
+form {
+    max-width: 45rem;
+    margin: 0.6rem auto;
+    text-align: center;
+    margin-bottom: 2rem;
+
+ 
+
+}
+
+form .inputBox{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+form .inputBox input,
+textarea{
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    color: var(--text-color);
+    background-color: var(--bg-color-02);
+    border-radius: 0.5rem;
+    margin: 0.4rem 0;
+}
+
+form textarea{
+    resize: none;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1.2rem;
+    background-color: var(--bg-color-01);
+
+}
+
+h3{
+    color: white;
+}
+h1{
+    color: white;
+}
+span{
+    color: var(--main-color);
+}
+
